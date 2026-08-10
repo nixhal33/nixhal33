@@ -152,8 +152,8 @@ motto: "Automate everything. Break nothing. Repeat."
 └─────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────┐
-│  Python Developer Intern                                │
-│  Sisani Technology                   Jan–Apr 2024       │
+│  Python Developer                                       │
+│  Sisani Technology                   Jan–Nov 2024       │
 │  ──────────────────────────────────────────────────     │
 │  Backend development, API integration, debugging        │
 │  and software workflow exposure                         │
