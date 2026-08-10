@@ -5,7 +5,7 @@
 ████╗  ██║██║██╔════╝██╔════╝██║  ██║██╔══██╗██║
 ██╔██╗ ██║██║███████╗██║     ███████║███████║██║
 ██║╚██╗██║██║╚════██║██║     ██╔══██║██╔══██║██║
-██║    ██║██║████║██║███████║╚██████╗██║  ██║██║█║███████╗
+██║ ╚████║██║███████║╚██████╗██║  ██║██║  ██║███████╗
 ╚═╝  ╚═══╝╚═╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
 ```
 
@@ -32,9 +32,9 @@ focus:
   - Cloud Infrastructure (AWS)
   - Infrastructure as Code (Terraform + Ansible)
 currently_learning:
-  - GitOps with ArgoCD
-  - Advanced Kubernetes patterns
+  - Helm package manager
   - AWS DevOps Professional path
+  - Advanced Kubernetes patterns
 motto: "Automate everything. Break nothing. Repeat."
 ```
 
@@ -46,6 +46,7 @@ motto: "Automate everything. Break nothing. Repeat."
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=FF9900)
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
 ![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white)
+![Proxmox](https://img.shields.io/badge/Proxmox_VE-E57000?style=for-the-badge&logo=proxmox&logoColor=white)
 
 ### 🐳 Containers & Orchestration
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
@@ -71,15 +72,72 @@ motto: "Automate everything. Break nothing. Repeat."
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-![GitLab CI](https://img.shields.io/badge/GitLab_CI-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white)
+![Pi-hole](https://img.shields.io/badge/Pi--hole-96060C?style=for-the-badge&logo=pihole&logoColor=white)
 
 ### 📊 Observability & Monitoring
 ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
-![SNMP](https://img.shields.io/badge/SNMP-4B8BBE?style=for-the-badge&logo=cisco&logoColor=white)
-![SNMP Exporter](https://img.shields.io/badge/SNMP_Exporter-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
-![Node Exporter](https://img.shields.io/badge/Node_Exporter-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
 ![Alertmanager](https://img.shields.io/badge/Alertmanager-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
+![Slack](https://img.shields.io/badge/Slack_Alerts-4A154B?style=for-the-badge&logo=slack&logoColor=white)
+![SNMP](https://img.shields.io/badge/SNMP-4B8BBE?style=for-the-badge&logo=cisco&logoColor=white)
+![Node Exporter](https://img.shields.io/badge/Node_Exporter-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
+
+---
+
+## 🏆 Current Achievements
+
+> *Recent, real-world builds shipped at TechHaus & in my homelab*
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 📡 Network Monitoring Stack
+**Router & Switch Observability**
+
+Built a full monitoring stack for TechHaus's network gear using **Prometheus + Grafana**, with **Alertmanager** routing critical alerts straight into **Slack** for real-time visibility.
+
+`Prometheus` `Grafana` `Alertmanager` `SNMP` `Slack`
+
+</td>
+<td width="50%" valign="top">
+
+### 🖥️ Bare-Metal PVE Monitoring
+**Proxmox Host & Guest Observability**
+
+Deployed a monitoring stack for the company's bare-metal **Proxmox VE** server hosting multiple VMs/LXCs — tracking RAM, disk (ROM), network I/O throughput, and per-VM/LXC memory usage.
+
+`Proxmox VE` `Prometheus` `Grafana` `Resource Monitoring`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🧪 Local Service Emulator
+**Forked from Vercel Labs**
+
+Turned a Vercel Labs simulator monorepo into a full, locally-running application — validating and bringing to life **5 service APIs** (Google, Twilio, Resend, Stripe & Apple), each containerized with custom `Dockerfile`s and `docker-compose`.
+
+📂 Repo: [`emulate_local`](https://github.com/nixhal33/emulate_local)
+
+`Docker` `Docker Compose` `API Simulation` `Vercel Labs`
+
+</td>
+<td width="50%" valign="top">
+
+### ⚙️ InfraOps Portal
+**Vibe-coded K8s Architecture Playground**
+
+Built an app simulating deep **Kubernetes** architecture & workflows — **Pi-hole** for subdomain routing, a full **GitOps** flow with **Helm charts**, and **ArgoCD** for continuous deployment checks.
+
+`Kubernetes` `Pi-hole` `Helm` `ArgoCD` `GitOps`
+
+</td>
+</tr>
+</table>
+
+**Also practiced:** Cloud-Init templating on Proxmox VE — a one-shot YAML template approach and a reusable multi-VM template approach — plus foundational Python scripting.
 
 ---
 
@@ -185,10 +243,10 @@ motto: "Automate everything. Break nothing. Repeat."
 
 ## 🌱 Currently Working On
 
-- [ ] Deepening Kubernetes production patterns
-- [ ] Exploring Helm charts for app packaging
-- [ ] Building more real-world CI/CD pipelines at TechHaus
+- [ ] Learning **Helm** package manager in depth
 - [ ] AWS Certified DevOps Engineer preparation
+- [ ] Deepening Kubernetes production patterns
+- [ ] Building more real-world CI/CD pipelines at TechHaus
 
 ---
 
